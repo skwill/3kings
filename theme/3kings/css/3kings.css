@@ -1,0 +1,32 @@
+.company-intro-block{
+	min-height: 400px;
+	/*background-color: #3D0E93;*/
+}
+.company-intro-block div.padded{
+	padding: 40px;
+}
+
+.center-align{
+	text-align: center;
+}
+
+.contact-info h3{
+	/*padding-top: 70px;*/
+	margin-bottom: 70px;
+}
+
+.contact-icons a i{
+	font-size: 50px;
+	text-align: center;
+}
+
+.contact-txt{
+	padding: 20px;
+	text-align: left;
+}
+
+.med-img img{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
