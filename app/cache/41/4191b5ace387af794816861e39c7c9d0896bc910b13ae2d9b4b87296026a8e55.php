@@ -52,12 +52,12 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
         try {
             // line 5
             echo "    ";
-            $context["__internal_f412aec81615b5a7e74e1497a4bb86cfef0bf75f87ad881fdcaa9e5eff6726b2"] = $this;
+            $context["__internal_efec7c376c78042bb9029f3ab7a7aaa1de8130b7a61b540a309732b8ee989ae0"] = $this;
             // line 6
             echo "    <li class=\"divider\">
         <em>";
             // line 7
-            echo $context["__internal_f412aec81615b5a7e74e1497a4bb86cfef0bf75f87ad881fdcaa9e5eff6726b2"]->getlabel((isset($context["icon"]) ? $context["icon"] : null), (isset($context["title"]) ? $context["title"] : null));
+            echo $context["__internal_efec7c376c78042bb9029f3ab7a7aaa1de8130b7a61b540a309732b8ee989ae0"]->getlabel((isset($context["icon"]) ? $context["icon"] : null), (isset($context["title"]) ? $context["title"] : null));
             echo "</em>
     </li>
 ";
@@ -91,7 +91,7 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
             echo "
     ";
             // line 24
-            $context["__internal_ce7c10a4839b1fd76ba12d29160f1001d2ec129c7401bcccb42a615629192ace"] = $this;
+            $context["__internal_1e651b667c2a781e85995ead430a61eee70e3e9abe46920cbc17f83afb559428"] = $this;
             // line 25
             echo "
     ";
@@ -172,7 +172,7 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
                     echo "\">
                     ";
                     // line 50
-                    echo $context["__internal_ce7c10a4839b1fd76ba12d29160f1001d2ec129c7401bcccb42a615629192ace"]->geticon($this->getAttribute((isset($context["item"]) ? $context["item"] : null), "icon", array()), "icon");
+                    echo $context["__internal_1e651b667c2a781e85995ead430a61eee70e3e9abe46920cbc17f83afb559428"]->geticon($this->getAttribute((isset($context["item"]) ? $context["item"] : null), "icon", array()), "icon");
                     echo (($this->getAttribute((isset($context["item"]) ? $context["item"] : null), "label", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute((isset($context["item"]) ? $context["item"] : null), "label", array()), (("<em>(" . $this->env->getExtension('Bolt')->trans("no content …")) . ")</em>"))) : ((("<em>(" . $this->env->getExtension('Bolt')->trans("no content …")) . ")</em>")));
                     echo "
                 </a>
@@ -188,7 +188,7 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
                     echo "\" class=\"menu-pop\">
                     ";
                     // line 54
-                    echo $context["__internal_ce7c10a4839b1fd76ba12d29160f1001d2ec129c7401bcccb42a615629192ace"]->getlabel((isset($context["icon"]) ? $context["icon"] : null), (isset($context["label"]) ? $context["label"] : null));
+                    echo $context["__internal_1e651b667c2a781e85995ead430a61eee70e3e9abe46920cbc17f83afb559428"]->getlabel((isset($context["icon"]) ? $context["icon"] : null), (isset($context["label"]) ? $context["label"] : null));
                     echo "
                 </a>
                 <ul class=\"nav submenu\">
@@ -221,7 +221,7 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
                             echo "\">
                                     ";
                             // line 64
-                            echo $context["__internal_ce7c10a4839b1fd76ba12d29160f1001d2ec129c7401bcccb42a615629192ace"]->geticon($this->getAttribute($context["item"], "icon", array()));
+                            echo $context["__internal_1e651b667c2a781e85995ead430a61eee70e3e9abe46920cbc17f83afb559428"]->geticon($this->getAttribute($context["item"], "icon", array()));
                             echo (($this->getAttribute($context["item"], "label", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute($context["item"], "label", array()), (("<em>(" . $this->env->getExtension('Bolt')->trans("no content …")) . ")</em>"))) : ((("<em>(" . $this->env->getExtension('Bolt')->trans("no content …")) . ")</em>")));
                             echo "
                                 </a>
@@ -271,14 +271,14 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
         try {
             // line 82
             echo "    ";
-            $context["__internal_90d944bd1965b94b1f8a538027e002d86c370e35916b04707c5424c576050dc7"] = $this;
+            $context["__internal_12e72c69c4738c9abc14b20651d29835ce9695c6bf1932aa0b41ade68387fa59"] = $this;
             // line 83
             echo "
     <li class=\"nav-secondary-collapse\">
         <a href=\"#\">
             ";
             // line 86
-            echo $context["__internal_90d944bd1965b94b1f8a538027e002d86c370e35916b04707c5424c576050dc7"]->getlabel("fa:compress", $this->env->getExtension('Bolt')->trans("Collapse sidebar"));
+            echo $context["__internal_12e72c69c4738c9abc14b20651d29835ce9695c6bf1932aa0b41ade68387fa59"]->getlabel("fa:compress", $this->env->getExtension('Bolt')->trans("Collapse sidebar"));
             echo "
         </a>
     </li>
@@ -286,7 +286,7 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
         <a href=\"#\">
             ";
             // line 91
-            echo $context["__internal_90d944bd1965b94b1f8a538027e002d86c370e35916b04707c5424c576050dc7"]->getlabel("fa:expand", $this->env->getExtension('Bolt')->trans("Expand sidebar"));
+            echo $context["__internal_12e72c69c4738c9abc14b20651d29835ce9695c6bf1932aa0b41ade68387fa59"]->getlabel("fa:expand", $this->env->getExtension('Bolt')->trans("Expand sidebar"));
             echo "
         </a>
     </li>
@@ -318,7 +318,7 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
         try {
             // line 101
             echo "    ";
-            $context["__internal_6c17e5b4014bef1dc28bf1b932dd286514fbdfd9fc384f461ba8c7dd64f5541d"] = $this;
+            $context["__internal_b0ef7196bb76b21aaf68182a22f58b63610ae9a43290900fa02c43841d8b046c"] = $this;
             // line 102
             echo "    ";
             $context["class"] = "";
@@ -351,7 +351,7 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
             // line 108
             echo $this->env->getExtension('routing')->getPath((isset($context["pathname"]) ? $context["pathname"] : null));
             echo "\">";
-            echo $context["__internal_6c17e5b4014bef1dc28bf1b932dd286514fbdfd9fc384f461ba8c7dd64f5541d"]->getlabel((isset($context["icon"]) ? $context["icon"] : null), (isset($context["label"]) ? $context["label"] : null));
+            echo $context["__internal_b0ef7196bb76b21aaf68182a22f58b63610ae9a43290900fa02c43841d8b046c"]->getlabel((isset($context["icon"]) ? $context["icon"] : null), (isset($context["label"]) ? $context["label"] : null));
             echo "</a>
     </li>
 ";
@@ -379,7 +379,7 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
         try {
             // line 117
             echo "    ";
-            $context["__internal_4e304943ae620ae273cd3300177047011579033ead96858e14387c591b2bc941"] = $this;
+            $context["__internal_0cab543e218afd85a10d9b58e4e84a757c17c5048072b25d64ef08cafaf40387"] = $this;
             // line 118
             echo "
     ";
@@ -394,7 +394,7 @@ class __TwigTemplate_4b311eac4a43f4c94f93dbb727d65f9fbaa264b2c94f5ab5fa68496ac20
 (isset($context["icon"]) ? $context["icon"] : null) != "-")) {
                 // line 122
                 echo "        ";
-                echo $context["__internal_4e304943ae620ae273cd3300177047011579033ead96858e14387c591b2bc941"]->geticon((isset($context["icon"]) ? $context["icon"] : null), true);
+                echo $context["__internal_0cab543e218afd85a10d9b58e4e84a757c17c5048072b25d64ef08cafaf40387"]->geticon((isset($context["icon"]) ? $context["icon"] : null), true);
                 echo "
     ";
             }

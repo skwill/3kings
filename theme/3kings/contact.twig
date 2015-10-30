@@ -1,0 +1,49 @@
+{% include '_header.twig' %}
+
+{% setcontent contact = "contacts/1" %}
+
+<section class="sign-up section-padding text-center" id="download">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Send us a message!</h3>
+                <p>Contact us today for any queries, feedback or just to say hello!</p>
+                <form class="signup-form" action="#" method="POST" role="form">
+                    <div class="form-input-group">
+                        <i class="fa fa-envelope"></i><input type="text" class="" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-input-group">
+                        <i class="fa fa-phone"></i><input type="text" class="" placeholder="Enter your phone number (optional)" required>
+                    </div>
+                    <div class="form-input-group">
+                        <textarea name="comment" form="usrform" rows="6" placeholder="Enter your message"></textarea>
+                        <!-- <i class="fa fa-lock"></i><input type="text" class="" placeholder="Enter your password" required> -->
+                        
+                    </div>
+                    <button type="submit" class="btn-fill sign-up-btn">Send Message</button>                    
+                </form>
+            </div>
+            <div class="col-md-6 contact-info">
+                <h3>Contact Info </h3>
+                <div class="col-sm-4  contact-icons">
+                    <a href="tel:"><i class="fa fa-phone-square"></i></a>
+                    <p><a href="tel:">{{contact.phone}}</a> </p>
+                </div>
+                <div class="col-sm-4 contact-icons">
+                    <a href=""><i class="fa  fa-envelope "></i></a>
+                    <p><a href="">{{contact.email}}</a></p>
+                </div>
+                <div class="col-sm-4 contact-icons">
+                    <a href=""><i class="fa fa-facebook-official "></i></a>
+                    <p><a href="">{{contact.facebook}}</a></p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 contact-txt">
+                        {{contact.contact_text}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include '_footer.twig' %}

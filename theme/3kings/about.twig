@@ -1,0 +1,40 @@
+{% include '_header.twig' %}
+
+{% setcontent testimonials= "testimonials" %}
+<section>                           
+    <div class="row  company-intro-block " style="padding-top: 120px;">
+        <h2 class="center-align">{{page.title}}</h2>     
+        <div class="col-lg-6 padded minus-bottom wow bounceInLeft " style="">
+            <h3 class="lato-font center-align highlight">Who are we?</h3>
+            {{page.body}}           
+        </div>
+        <div class="col-lg-6 company-intro-block padded wow bounceInRight">
+            <img src="{{ image(page.image1) }}" class="img-responsive img-rounded">
+        </div>
+    </div>    
+    <div class="row  company-intro-block">
+        <div class="col-lg-6 company-intro-block padded wow bounceInLeft">
+            <img src="{{ image(page.image2) }}" class="img-responsive img-rounded">
+        </div>
+        <div class="col-lg-6 padded minus-bottom wow bounceInRight">
+            <h3 class="lato-font center-align highlight">What we do</h3>
+            {{page.body2}}        
+        </div>                
+    </div>                   
+</section>
+<section class="testimony" >
+    <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+            <h3 class="center-align">What do our customers say?</h3>
+            <ul id="demo2" class="header-section">
+                {% for testimony in testimonials|order('id') %}
+                    <li class="center-align">
+                        "{{testimony.testimony}}"
+                        <strong><p>{{testimony.client_name}}</p></strong> 
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>            
+</section>
+{% include '_footer.twig' %}

@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300);
 .company-intro-block{
 	min-height: 400px;
 	/*background-color: #3D0E93;*/
@@ -29,4 +30,15 @@
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.lato-font{
+	font-family: 'Lato';
+}
+.lato-font.white{
+	color: #ffffff !important;
+}
+
+.highlight{
+	color: #E24B70;
 }

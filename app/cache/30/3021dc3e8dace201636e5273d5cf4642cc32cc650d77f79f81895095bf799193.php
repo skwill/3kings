@@ -20,63 +20,62 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
 <footer>
     <div class=\"container\">
         <div class=\"row\">
-            <div class=\"col-md-7\">
-                <div class=\"footer-links\">
-                    <ul class=\"footer-group\">
-                        <!-- <li><a href=\"#\">Features</a></li>
-                        <li><a href=\"#\">Pricing</a></li>
-                        <li><a href=\"#\">Sign up</a></li>
-                        <li><a href=\"http://tympanus.net/codrops/licensing/\">Licence</a></li>
-                        <li><a href=\"http://tympanus.net/codrops/\">Codrops</a></li>
-                        <li><a href=\"http://www.peterfinlan.com/\">Peter Finlan</a></li> -->
-                    </ul>
-                    <!-- <p>Copyright © 2015 <a href=\"#\">Sedna</a><br> -->
-                   <!--  <a href=\"http://tympanus.net/codrops/licensing/\">Licence</a> | Crafted with <span class=\"fa fa-heart pulse2\"></span> by <a href=\"http://www.peterfinlan.com/\">Peter Finlan</a>.</p> -->
-                </div>
+            <div class=\"col-md-4\">
+                <div class=\"logo\"><a href=\"#\"><img src=\"";
+        // line 6
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
+        echo "img/small2.png\" class=\"img-responsive\" alt=\"\"></a></div>
             </div>
-            <div class=\"col-md-5 \">
-                <!-- <p>Share Sedna with your friends</p>
-                <a href=\"https://twitter.com/peterfinlan\" class=\"twitter-share\"><i class=\"fa fa-twitter\"></i></a> <a href=\"#\" class=\"facebook-share\"><i class=\"fa fa-facebook\"></i></a> -->
+            <div class=\"col-md-4 center-align lato-font white\">
+                <h3 class=\"\">3 Kings Enterprises</h3>
+            </div>
+            <div class=\"col-md-4 center-align\">                
+                 <!-- <a href=\"https://twitter.com/peterfinlan\" class=\"twitter-share\"><p>Check us out</p></a>  -->
+                 <!-- <h3 class=\"center-align lato-font white\">Check us out</h3> -->
+                 <a href=\"#\" class=\"facebook-share\"><i class=\"fa fa-facebook fa-2x\"><h4 class=\"center-align lato-font white\">Check Us Out</h4></i></a>                
             </div>
         </div>        
     </div>
 </footer>
 <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js\"></script>
-    <script>window.jQuery || document.write('<script src=\"js/vendor/jquery-1.11.2.min.js\"><\\/script>')</script>
+    <script>window.jQuery || document.write('<script src=\"";
+        // line 20
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
+        echo "js/vendor/jquery-1.11.2.min.js\"><\\/script>')</script>
     <script src=\"";
-        // line 28
+        // line 21
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/retina.js/dist/retina.js\"></script>
     <script src=\"";
-        // line 29
+        // line 22
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/jquery.fancybox.pack.js\"></script>
     <script src=\"";
-        // line 30
+        // line 23
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/vendor/bootstrap.min.js\"></script>
     <script src=\"";
-        // line 31
+        // line 24
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/scripts.js\"></script>
     <script src=\"";
-        // line 32
+        // line 25
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/jquery.flexslider-min.js\"></script>
     <script src=\"";
-        // line 33
+        // line 26
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/classie/classie.js\"></script>
     <script src=\"";
-        // line 34
+        // line 27
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/jquery-waypoints/lib/jquery.waypoints.min.js\"></script>
     <script src=\"";
-        // line 35
+        // line 28
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/slippry.js\"></script>
     <script src=\"";
-        // line 36
+        // line 29
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/wow.js\"></script>
     
@@ -126,6 +125,49 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
             });
         });
     </script>
+
+    <script>
+        \$(function() {
+            var demo1 = \$(\"#demo2\").slippry({
+                 transition: 'horizontal',
+                // useCSS: true,
+                 speed: 1000,
+                 pause: 5000,
+                //auto: true,
+                //preload: 'visible',
+                 //autoHover: false
+            });
+
+            \$('.stop').click(function () {
+                demo1.stopAuto();
+            });
+
+            \$('.start').click(function () {
+                demo1.startAuto();
+            });
+
+            \$('.prev').click(function () {
+                demo1.goToPrevSlide();
+                return false;
+            });
+            \$('.next').click(function () {
+                demo1.goToNextSlide();
+                return false;
+            });
+            \$('.reset').click(function () {
+                demo1.destroySlider();
+                return false;
+            });
+            \$('.reload').click(function () {
+                demo1.reloadSlider();
+                return false;
+            });
+            \$('.init').click(function () {
+                demo1 = \$(\"#demo1\").slippry();
+                return false;
+            });
+        });
+    </script>
 </body>
 </html>";
     }
@@ -142,36 +184,29 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
 
     public function getDebugInfo()
     {
-        return array (  80 => 36,  76 => 35,  72 => 34,  68 => 33,  64 => 32,  60 => 31,  56 => 30,  52 => 29,  48 => 28,  19 => 1,);
+        return array (  79 => 29,  75 => 28,  71 => 27,  67 => 26,  63 => 25,  59 => 24,  55 => 23,  51 => 22,  47 => 21,  43 => 20,  26 => 6,  19 => 1,);
     }
 }
 /* </section>*/
 /* <footer>*/
 /*     <div class="container">*/
 /*         <div class="row">*/
-/*             <div class="col-md-7">*/
-/*                 <div class="footer-links">*/
-/*                     <ul class="footer-group">*/
-/*                         <!-- <li><a href="#">Features</a></li>*/
-/*                         <li><a href="#">Pricing</a></li>*/
-/*                         <li><a href="#">Sign up</a></li>*/
-/*                         <li><a href="http://tympanus.net/codrops/licensing/">Licence</a></li>*/
-/*                         <li><a href="http://tympanus.net/codrops/">Codrops</a></li>*/
-/*                         <li><a href="http://www.peterfinlan.com/">Peter Finlan</a></li> -->*/
-/*                     </ul>*/
-/*                     <!-- <p>Copyright © 2015 <a href="#">Sedna</a><br> -->*/
-/*                    <!--  <a href="http://tympanus.net/codrops/licensing/">Licence</a> | Crafted with <span class="fa fa-heart pulse2"></span> by <a href="http://www.peterfinlan.com/">Peter Finlan</a>.</p> -->*/
-/*                 </div>*/
+/*             <div class="col-md-4">*/
+/*                 <div class="logo"><a href="#"><img src="{{ paths.theme }}img/small2.png" class="img-responsive" alt=""></a></div>*/
 /*             </div>*/
-/*             <div class="col-md-5 ">*/
-/*                 <!-- <p>Share Sedna with your friends</p>*/
-/*                 <a href="https://twitter.com/peterfinlan" class="twitter-share"><i class="fa fa-twitter"></i></a> <a href="#" class="facebook-share"><i class="fa fa-facebook"></i></a> -->*/
+/*             <div class="col-md-4 center-align lato-font white">*/
+/*                 <h3 class="">3 Kings Enterprises</h3>*/
+/*             </div>*/
+/*             <div class="col-md-4 center-align">                */
+/*                  <!-- <a href="https://twitter.com/peterfinlan" class="twitter-share"><p>Check us out</p></a>  -->*/
+/*                  <!-- <h3 class="center-align lato-font white">Check us out</h3> -->*/
+/*                  <a href="#" class="facebook-share"><i class="fa fa-facebook fa-2x"><h4 class="center-align lato-font white">Check Us Out</h4></i></a>                */
 /*             </div>*/
 /*         </div>        */
 /*     </div>*/
 /* </footer>*/
 /* <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>*/
-/*     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>*/
+/*     <script>window.jQuery || document.write('<script src="{{ paths.theme }}js/vendor/jquery-1.11.2.min.js"><\/script>')</script>*/
 /*     <script src="{{ paths.theme }}bower_components/retina.js/dist/retina.js"></script>*/
 /*     <script src="{{ paths.theme }}js/jquery.fancybox.pack.js"></script>*/
 /*     <script src="{{ paths.theme }}js/vendor/bootstrap.min.js"></script>*/
@@ -196,6 +231,49 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
 /*                 auto: true,*/
 /*                 preload: 'visible',*/
 /*                  autoHover: false*/
+/*             });*/
+/* */
+/*             $('.stop').click(function () {*/
+/*                 demo1.stopAuto();*/
+/*             });*/
+/* */
+/*             $('.start').click(function () {*/
+/*                 demo1.startAuto();*/
+/*             });*/
+/* */
+/*             $('.prev').click(function () {*/
+/*                 demo1.goToPrevSlide();*/
+/*                 return false;*/
+/*             });*/
+/*             $('.next').click(function () {*/
+/*                 demo1.goToNextSlide();*/
+/*                 return false;*/
+/*             });*/
+/*             $('.reset').click(function () {*/
+/*                 demo1.destroySlider();*/
+/*                 return false;*/
+/*             });*/
+/*             $('.reload').click(function () {*/
+/*                 demo1.reloadSlider();*/
+/*                 return false;*/
+/*             });*/
+/*             $('.init').click(function () {*/
+/*                 demo1 = $("#demo1").slippry();*/
+/*                 return false;*/
+/*             });*/
+/*         });*/
+/*     </script>*/
+/* */
+/*     <script>*/
+/*         $(function() {*/
+/*             var demo1 = $("#demo2").slippry({*/
+/*                  transition: 'horizontal',*/
+/*                 // useCSS: true,*/
+/*                  speed: 1000,*/
+/*                  pause: 5000,*/
+/*                 //auto: true,*/
+/*                 //preload: 'visible',*/
+/*                  //autoHover: false*/
 /*             });*/
 /* */
 /*             $('.stop').click(function () {*/
