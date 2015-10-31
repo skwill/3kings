@@ -60,7 +60,7 @@ class __TwigTemplate_5a9a47100ac34192a4f98a6750ceeee313fcd7c8d60745e52f0af230441
         </div>                
     </div>                   
 </section>
-<section>
+<section class=\"testimony\" >
     <div class=\"container\">
         <div class=\"col-md-8 col-md-offset-2\">
             <h3 class=\"center-align\">What do our customers say?</h3>
@@ -135,7 +135,7 @@ class __TwigTemplate_5a9a47100ac34192a4f98a6750ceeee313fcd7c8d60745e52f0af230441
 /*         </div>                */
 /*     </div>                   */
 /* </section>*/
-/* <section>*/
+/* <section class="testimony" >*/
 /*     <div class="container">*/
 /*         <div class="col-md-8 col-md-offset-2">*/
 /*             <h3 class="center-align">What do our customers say?</h3>*/

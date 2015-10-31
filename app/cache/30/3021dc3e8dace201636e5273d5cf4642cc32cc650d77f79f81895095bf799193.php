@@ -26,13 +26,13 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "img/small2.png\" class=\"img-responsive\" alt=\"\"></a></div>
             </div>
-            <div class=\"col-md-4 center-align lato-font white\">
-                <h3 class=\"\">3 Kings Enterprises</h3>
+            <div class=\"col-md-4 center-align\">
+                <h3 class=\"lato-font white\">3 Kings Enterprises</h3>
             </div>
             <div class=\"col-md-4 center-align\">                
                  <!-- <a href=\"https://twitter.com/peterfinlan\" class=\"twitter-share\"><p>Check us out</p></a>  -->
                  <!-- <h3 class=\"center-align lato-font white\">Check us out</h3> -->
-                 <a href=\"#\" class=\"facebook-share\"><i class=\"fa fa-facebook fa-2x\"><h4 class=\"center-align lato-font white\">Check Us Out</h4></i></a>                
+                 <a href=\"#\" class=\"facebook-share\"><i class=\"fa fa-facebook-official fa-1x\"><h4 class=\"center-align lato-font white\">Check Us Out</h4></i></a>                
             </div>
         </div>        
     </div>
@@ -194,13 +194,13 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
 /*             <div class="col-md-4">*/
 /*                 <div class="logo"><a href="#"><img src="{{ paths.theme }}img/small2.png" class="img-responsive" alt=""></a></div>*/
 /*             </div>*/
-/*             <div class="col-md-4 center-align lato-font white">*/
-/*                 <h3 class="">3 Kings Enterprises</h3>*/
+/*             <div class="col-md-4 center-align">*/
+/*                 <h3 class="lato-font white">3 Kings Enterprises</h3>*/
 /*             </div>*/
 /*             <div class="col-md-4 center-align">                */
 /*                  <!-- <a href="https://twitter.com/peterfinlan" class="twitter-share"><p>Check us out</p></a>  -->*/
 /*                  <!-- <h3 class="center-align lato-font white">Check us out</h3> -->*/
-/*                  <a href="#" class="facebook-share"><i class="fa fa-facebook fa-2x"><h4 class="center-align lato-font white">Check Us Out</h4></i></a>                */
+/*                  <a href="#" class="facebook-share"><i class="fa fa-facebook-official fa-1x"><h4 class="center-align lato-font white">Check Us Out</h4></i></a>                */
 /*             </div>*/
 /*         </div>        */
 /*     </div>*/
