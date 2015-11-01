@@ -42,3 +42,20 @@
 .highlight{
 	color: #E24B70;
 }
+
+.product-name{
+	height: 50px;
+}
+
+.line{
+	margin-top: -5px;
+}
+
+.phone{
+	margin-bottom: 20px;
+}
+
+.phone img{
+	width: 250px;
+	height: 150px;
+}

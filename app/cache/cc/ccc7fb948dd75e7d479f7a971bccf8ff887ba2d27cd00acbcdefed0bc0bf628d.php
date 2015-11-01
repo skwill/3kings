@@ -74,7 +74,7 @@ class __TwigTemplate_bdcb0f5329ad5c3b7d08f8b3a379203101ca5e1929fad6f58519cfccefb
         $context["macro"] = $this->loadTemplate("_macro/_macro.twig", "components/panel-lastmodified.twig", 23);
         // line 24
         echo "    ";
-        $context["__internal_b307044f3a08bbfa70aef0ef7534bcc4575ee36004c5c3fc64ced744feb65e5f"] = $this->loadTemplate("changelog/_macros.twig", "components/panel-lastmodified.twig", 24);
+        $context["__internal_72f8d3213429e85a7885572bdb1775863746dfcab8cac29dac3936499de701d5"] = $this->loadTemplate("changelog/_macros.twig", "components/panel-lastmodified.twig", 24);
         // line 25
         echo "
     <ul>
@@ -125,7 +125,7 @@ class __TwigTemplate_bdcb0f5329ad5c3b7d08f8b3a379203101ca5e1929fad6f58519cfccefb
                 echo "
                     ";
                 // line 41
-                echo $context["__internal_b307044f3a08bbfa70aef0ef7534bcc4575ee36004c5c3fc64ced744feb65e5f"]->getchangelog_mutation($this->getAttribute($context["entry"], "mutation_type", array()));
+                echo $context["__internal_72f8d3213429e85a7885572bdb1775863746dfcab8cac29dac3936499de701d5"]->getchangelog_mutation($this->getAttribute($context["entry"], "mutation_type", array()));
                 echo "
                     ";
                 // line 42

@@ -89,16 +89,17 @@ class __TwigTemplate_c9a33cab7b4f1a628a727278ba85ba55673db6bc8690fedc4300f8f7757
         <section class=\"navigation\">
             <header>
                 <div class=\"header-content\">
-                    <div class=\"logo\"><a href=\"#\"><img src=\"";
+                    <div class=\"logo\"><a href=\"/3k/\"><img src=\"";
         // line 38
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "img/small2.png\" class=\"img-responsive\" alt=\"\"></a></div>
                     <div class=\"header-nav\">
                         <nav>
                             <ul class=\"primary-nav\">
-                                <li><a href=\"#features\"><i class=\"fa fa-info-circle\"></i> About Us</a></li>
-                                <li><a href=\"#assets\"><i class=\"fa fa-shopping-cart\"></i> Store</a></li>
-                                <li><a href=\"#blog\"><i class=\"fa  fa-phone\"></i> Contact Us</a></li>
+                                <li><a href=\"/3k/\"><i class=\"fa fa-home\"></i> Home</a></li>
+                                <li><a href=\"/3k/about-us\"><i class=\"fa fa-info-circle\"></i> About Us</a></li>
+                                <li><a href=\"/3k/store\"><i class=\"fa fa-shopping-cart\"></i> Store</a></li>
+                                <li><a href=\"/3k/contact-us\"><i class=\"fa  fa-phone\"></i> Contact Us</a></li>
                                 <!-- <li><a href=\"#download\">Download</a></li> -->
                             </ul>
                             <!-- <ul class=\"member-actions\">
@@ -167,13 +168,14 @@ class __TwigTemplate_c9a33cab7b4f1a628a727278ba85ba55673db6bc8690fedc4300f8f7757
 /*         <section class="navigation">*/
 /*             <header>*/
 /*                 <div class="header-content">*/
-/*                     <div class="logo"><a href="#"><img src="{{ paths.theme }}img/small2.png" class="img-responsive" alt=""></a></div>*/
+/*                     <div class="logo"><a href="/3k/"><img src="{{ paths.theme }}img/small2.png" class="img-responsive" alt=""></a></div>*/
 /*                     <div class="header-nav">*/
 /*                         <nav>*/
 /*                             <ul class="primary-nav">*/
-/*                                 <li><a href="#features"><i class="fa fa-info-circle"></i> About Us</a></li>*/
-/*                                 <li><a href="#assets"><i class="fa fa-shopping-cart"></i> Store</a></li>*/
-/*                                 <li><a href="#blog"><i class="fa  fa-phone"></i> Contact Us</a></li>*/
+/*                                 <li><a href="/3k/"><i class="fa fa-home"></i> Home</a></li>*/
+/*                                 <li><a href="/3k/about-us"><i class="fa fa-info-circle"></i> About Us</a></li>*/
+/*                                 <li><a href="/3k/store"><i class="fa fa-shopping-cart"></i> Store</a></li>*/
+/*                                 <li><a href="/3k/contact-us"><i class="fa  fa-phone"></i> Contact Us</a></li>*/
 /*                                 <!-- <li><a href="#download">Download</a></li> -->*/
 /*                             </ul>*/
 /*                             <!-- <ul class="member-actions">*/

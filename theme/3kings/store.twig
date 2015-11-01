@@ -1,0 +1,39 @@
+{% include '_header.twig' %}
+
+{% setcontent phones = "phones"%}
+
+<section>                           
+    <div class="row">
+    	<div class="container">
+    		<div class="row">
+    			<h2 class="center-align" style="padding-top: 120px;">{{page.title}}</h2> 
+	    		<div class="col-sm-8 col-sm-offset-2">
+	    			<p class="center-align">Welcome to our online store! Browse through our collection, see what you like and just add it to your cart. Once you are satisfied, go to your cart by clicking the <strong>cart icon</strong> <i class="fa fa-shopping-cart"></i> on your right, fill out your personal information and place your order. No credit card needed. Its that simple!</p>
+	    		</div>
+    		</div>   		
+    		<div class="row">
+    			{% for phone in phones|order('-id') %}
+    			<div class="col-sm-3 center-align phone">
+    				<div class="col-sm-12 product-name">    					
+    					<h5 class="center-align lato-font"><strong>{{phone.title}}</strong></h5>
+    					<hr class="line" />
+    				</div>
+    				<img src="{{ image(phone.main_image) }}" class="img-responsive img-rounded">
+    				<div class="col-sm-12 product-name"><h5 class="center-align lato-font">${{phone.price}}</h5></div>
+    				<div class="col-sm-12"><button class="btn-small2 btn-fill">Add To Cart</button></div>
+    			</div>
+    			{% endfor %}
+    		</div>
+    	</div>
+        
+
+        <!-- <div class="col-lg-6 padded minus-bottom wow bounceInLeft " style="">
+            <h3 class="lato-font center-align highlight">Who are we?</h3>
+            {{page.body}}           
+        </div>
+        <div class="col-lg-6 company-intro-block padded wow bounceInRight">
+            <img src="{{ image(page.image1) }}" class="img-responsive img-rounded">
+        </div> -->
+    </div>    
+</section>
+{% include '_footer.twig' %}

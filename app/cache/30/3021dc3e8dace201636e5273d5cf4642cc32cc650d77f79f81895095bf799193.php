@@ -21,13 +21,14 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
     <div class=\"container\">
         <div class=\"row\">
             <div class=\"col-md-4\">
-                <div class=\"logo\"><a href=\"#\"><img src=\"";
+                <div class=\"logo\"><a href=\"/3k/\"><img src=\"";
         // line 6
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "img/small2.png\" class=\"img-responsive\" alt=\"\"></a></div>
             </div>
             <div class=\"col-md-4 center-align\">
                 <h3 class=\"lato-font white\">3 Kings Enterprises</h3>
+                <h6 class=\"lato-font white\"><a href=\"\">Privacy</a> | <a href=\"\">Terms</a></h6>
             </div>
             <div class=\"col-md-4 center-align\">                
                  <!-- <a href=\"https://twitter.com/peterfinlan\" class=\"twitter-share\"><p>Check us out</p></a>  -->
@@ -39,43 +40,43 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
 </footer>
 <script src=\"http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js\"></script>
     <script>window.jQuery || document.write('<script src=\"";
-        // line 20
+        // line 21
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/vendor/jquery-1.11.2.min.js\"><\\/script>')</script>
     <script src=\"";
-        // line 21
+        // line 22
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/retina.js/dist/retina.js\"></script>
     <script src=\"";
-        // line 22
+        // line 23
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/jquery.fancybox.pack.js\"></script>
     <script src=\"";
-        // line 23
+        // line 24
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/vendor/bootstrap.min.js\"></script>
     <script src=\"";
-        // line 24
+        // line 25
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/scripts.js\"></script>
     <script src=\"";
-        // line 25
+        // line 26
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/jquery.flexslider-min.js\"></script>
     <script src=\"";
-        // line 26
+        // line 27
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/classie/classie.js\"></script>
     <script src=\"";
-        // line 27
+        // line 28
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/jquery-waypoints/lib/jquery.waypoints.min.js\"></script>
     <script src=\"";
-        // line 28
+        // line 29
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/slippry.js\"></script>
     <script src=\"";
-        // line 29
+        // line 30
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/wow.js\"></script>
     
@@ -184,7 +185,7 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
 
     public function getDebugInfo()
     {
-        return array (  79 => 29,  75 => 28,  71 => 27,  67 => 26,  63 => 25,  59 => 24,  55 => 23,  51 => 22,  47 => 21,  43 => 20,  26 => 6,  19 => 1,);
+        return array (  80 => 30,  76 => 29,  72 => 28,  68 => 27,  64 => 26,  60 => 25,  56 => 24,  52 => 23,  48 => 22,  44 => 21,  26 => 6,  19 => 1,);
     }
 }
 /* </section>*/
@@ -192,10 +193,11 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
 /*     <div class="container">*/
 /*         <div class="row">*/
 /*             <div class="col-md-4">*/
-/*                 <div class="logo"><a href="#"><img src="{{ paths.theme }}img/small2.png" class="img-responsive" alt=""></a></div>*/
+/*                 <div class="logo"><a href="/3k/"><img src="{{ paths.theme }}img/small2.png" class="img-responsive" alt=""></a></div>*/
 /*             </div>*/
 /*             <div class="col-md-4 center-align">*/
 /*                 <h3 class="lato-font white">3 Kings Enterprises</h3>*/
+/*                 <h6 class="lato-font white"><a href="">Privacy</a> | <a href="">Terms</a></h6>*/
 /*             </div>*/
 /*             <div class="col-md-4 center-align">                */
 /*                  <!-- <a href="https://twitter.com/peterfinlan" class="twitter-share"><p>Check us out</p></a>  -->*/
