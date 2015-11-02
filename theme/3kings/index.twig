@@ -2,7 +2,7 @@
 
 {% setcontent sliders = "sliders" %}
 
-<section>
+<section id="sliders-container">
     <ul id="demo1" class="header-section">
         {% for slide in sliders|order('id') %}
         <li><img src="{{ image(slide.image) }}"  alt='<h3 class="center-align lato-font white">{{slide.caption}}</h3>'</li>

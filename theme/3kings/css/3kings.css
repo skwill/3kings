@@ -58,4 +58,75 @@
 .phone img{
 	width: 250px;
 	height: 150px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#shopping-cart-trigger{
+	width: 50px; 
+	height: 50px; 
+	background-color: #261F83; 	
+	z-index: 100; 
+	top: 40%; 
+	right: 0; 
+	position: fixed; 
+	padding: 6px;
+	cursor: pointer;
+}
+
+.shopping-cart{
+	width: 80%;
+	height: 600px;
+	position: fixed;
+	/*top: 0;*/
+	z-index: 999;
+	background-color: #261F83;
+	right: -1000px;
+}
+
+#close-cart{
+	font-size: 25px;
+	color: #ffffff;
+
+	margin-left: 15px;	
+	background-color: #D7405D;
+}
+
+.order-form{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.order .order-form .order-btn {
+  margin-top:50px;
+  padding: 15px 0;
+ 
+  width: 80%;
+  font-size: 13px; 
+  background-color: #D7405D !important;
+}
+
+.order .order-form .form-input-group {
+  
+  height: 30px;
+  margin: 0 auto 10px; 
+  text-align: left;
+  position: relative; }
+
+  .order .order-form .form-input-group i {
+    color: #261089;
+    font-size: 25px; 
+}
+
+.order .order-form .form-input-group input {
+
+width: 100%;
+height: 100%;
+}
+
+@media (max-width: 499px) {
+  #sliders-container{
+    /*display: none;*/
+    padding-top: 130px;
+  }
 }

@@ -79,6 +79,10 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
         // line 30
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "js/wow.js\"></script>
+    <script src=\"";
+        // line 31
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
+        echo "js/3kings.js\"></script>
     
     <script>
       new WOW().init();
@@ -185,7 +189,7 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
 
     public function getDebugInfo()
     {
-        return array (  80 => 30,  76 => 29,  72 => 28,  68 => 27,  64 => 26,  60 => 25,  56 => 24,  52 => 23,  48 => 22,  44 => 21,  26 => 6,  19 => 1,);
+        return array (  84 => 31,  80 => 30,  76 => 29,  72 => 28,  68 => 27,  64 => 26,  60 => 25,  56 => 24,  52 => 23,  48 => 22,  44 => 21,  26 => 6,  19 => 1,);
     }
 }
 /* </section>*/
@@ -218,6 +222,7 @@ class __TwigTemplate_f8dd8aff0f9423f0f75307f9d6522258ea64c8406a7534c12ecb578efb0
 /*     <script src="{{ paths.theme }}bower_components/jquery-waypoints/lib/jquery.waypoints.min.js"></script>*/
 /*     <script src="{{ paths.theme }}js/slippry.js"></script>*/
 /*     <script src="{{ paths.theme }}js/wow.js"></script>*/
+/*     <script src="{{ paths.theme }}js/3kings.js"></script>*/
 /*     */
 /*     <script>*/
 /*       new WOW().init();*/

@@ -4,7 +4,40 @@
 
 <section>                           
     <div class="row">
-    	<div class="container">
+    	<div id="shopping-cart-trigger">
+			<i class="fa fa-shopping-cart" style="color: #ffffff; font-size: 35px;"></i>
+		</div>
+		<div class="shopping-cart">
+			<div class="row">
+				<div class="col-md-1" id="close-cart">
+					<i class="fa fa-arrow-right white"></i>					
+				</div>
+				<div class="col-md-10 center-align">
+					<h3 class="lato-font white">Welcome To Your Shopping Cart</h3>
+					<h4 class="lato-font white">Here is your order</h4>
+
+					<div class="col-md-12" id="orders">
+						
+					</div>
+
+					<div class="col-md-12 order">
+						<form class="order-form" action="#" method="POST" role="form">
+							<div class="col-sm-12 form-input-group">
+		                       	<input type="text" class="" placeholder="Enter your name" required>
+		                    </div>
+		                    <div class="col-sm-12 form-input-group">
+		                        <input type="text" class="" placeholder="Enter your email" required>
+		                    </div>
+		                    <div class=" col-sm-12 form-input-group">
+		                        <input type="text" class="" placeholder="Enter your phone number (optional)" required>
+		                    </div>		                    
+		                    <button type="submit" class="btn-fill order-btn">Send Message</button>                    
+		                </form> 
+					</div>
+				</div>
+			</div>
+		</div>
+    	<div class="container">    		
     		<div class="row">
     			<h2 class="center-align" style="padding-top: 120px;">{{page.title}}</h2> 
 	    		<div class="col-sm-8 col-sm-offset-2">

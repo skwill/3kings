@@ -27,10 +27,43 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
         echo "
 <section>                           
     <div class=\"row\">
-    \t<div class=\"container\">
+    \t<div id=\"shopping-cart-trigger\">
+\t\t\t<i class=\"fa fa-shopping-cart\" style=\"color: #ffffff; font-size: 35px;\"></i>
+\t\t</div>
+\t\t<div class=\"shopping-cart\">
+\t\t\t<div class=\"row\">
+\t\t\t\t<div class=\"col-md-1\" id=\"close-cart\">
+\t\t\t\t\t<i class=\"fa fa-arrow-right white\"></i>\t\t\t\t\t
+\t\t\t\t</div>
+\t\t\t\t<div class=\"col-md-10 center-align\">
+\t\t\t\t\t<h3 class=\"lato-font white\">Welcome To Your Shopping Cart</h3>
+\t\t\t\t\t<h4 class=\"lato-font white\">Here is your order</h4>
+
+\t\t\t\t\t<div class=\"col-md-12\">
+\t\t\t\t\t\t
+\t\t\t\t\t</div>
+
+\t\t\t\t\t<div class=\"col-md-12 order\">
+\t\t\t\t\t\t<form class=\"order-form\" action=\"#\" method=\"POST\" role=\"form\">
+\t\t\t\t\t\t\t<div class=\"col-sm-12 form-input-group\">
+\t\t                       \t<input type=\"text\" class=\"\" placeholder=\"Enter your name\" required>
+\t\t                    </div>
+\t\t                    <div class=\"col-sm-12 form-input-group\">
+\t\t                        <input type=\"text\" class=\"\" placeholder=\"Enter your email\" required>
+\t\t                    </div>
+\t\t                    <div class=\" col-sm-12 form-input-group\">
+\t\t                        <input type=\"text\" class=\"\" placeholder=\"Enter your phone number (optional)\" required>
+\t\t                    </div>\t\t                    
+\t\t                    <button type=\"submit\" class=\"btn-fill order-btn\">Send Message</button>                    
+\t\t                </form> 
+\t\t\t\t\t</div>
+\t\t\t\t</div>
+\t\t\t</div>
+\t\t</div>
+    \t<div class=\"container\">    \t\t
     \t\t<div class=\"row\">
     \t\t\t<h2 class=\"center-align\" style=\"padding-top: 120px;\">";
-        // line 9
+        // line 42
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "title", array()), "html", null, true);
         echo "</h2> 
 \t    \t\t<div class=\"col-sm-8 col-sm-offset-2\">
@@ -39,25 +72,25 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
     \t\t</div>   \t\t
     \t\t<div class=\"row\">
     \t\t\t";
-        // line 15
+        // line 48
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->env->getExtension('Bolt')->order((isset($context["phones"]) ? $context["phones"] : null), "-id"));
         foreach ($context['_seq'] as $context["_key"] => $context["phone"]) {
-            // line 16
+            // line 49
             echo "    \t\t\t<div class=\"col-sm-3 center-align phone\">
     \t\t\t\t<div class=\"col-sm-12 product-name\">    \t\t\t\t\t
     \t\t\t\t\t<h5 class=\"center-align lato-font\"><strong>";
-            // line 18
+            // line 51
             echo twig_escape_filter($this->env, $this->getAttribute($context["phone"], "title", array()), "html", null, true);
             echo "</strong></h5>
     \t\t\t\t\t<hr class=\"line\" />
     \t\t\t\t</div>
     \t\t\t\t<img src=\"";
-            // line 21
+            // line 54
             echo twig_escape_filter($this->env, $this->env->getExtension('Bolt')->image($this->getAttribute($context["phone"], "main_image", array())), "html", null, true);
             echo "\" class=\"img-responsive img-rounded\">
     \t\t\t\t<div class=\"col-sm-12 product-name\"><h5 class=\"center-align lato-font\">\$";
-            // line 22
+            // line 55
             echo twig_escape_filter($this->env, $this->getAttribute($context["phone"], "price", array()), "html", null, true);
             echo "</h5></div>
     \t\t\t\t<div class=\"col-sm-12\"><button class=\"btn-small2 btn-fill\">Add To Cart</button></div>
@@ -67,7 +100,7 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['phone'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 26
+        // line 59
         echo "    \t\t</div>
     \t</div>
         
@@ -75,21 +108,21 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
         <!-- <div class=\"col-lg-6 padded minus-bottom wow bounceInLeft \" style=\"\">
             <h3 class=\"lato-font center-align highlight\">Who are we?</h3>
             ";
-        // line 32
+        // line 65
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "body", array()), "html", null, true);
         echo "           
         </div>
         <div class=\"col-lg-6 company-intro-block padded wow bounceInRight\">
             <img src=\"";
-        // line 35
+        // line 68
         echo twig_escape_filter($this->env, $this->env->getExtension('Bolt')->image($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "image1", array())), "html", null, true);
         echo "\" class=\"img-responsive img-rounded\">
         </div> -->
     </div>    
 </section>
 ";
-        // line 39
-        $this->loadTemplate("_footer.twig", "store.twig", 39)->display($context);
+        // line 72
+        $this->loadTemplate("_footer.twig", "store.twig", 72)->display($context);
     }
 
     public function getTemplateName()
@@ -104,7 +137,7 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
 
     public function getDebugInfo()
     {
-        return array (  92 => 39,  85 => 35,  79 => 32,  71 => 26,  61 => 22,  57 => 21,  51 => 18,  47 => 16,  43 => 15,  34 => 9,  27 => 4,  24 => 3,  21 => 2,  19 => 1,);
+        return array (  125 => 72,  118 => 68,  112 => 65,  104 => 59,  94 => 55,  90 => 54,  84 => 51,  80 => 49,  76 => 48,  67 => 42,  27 => 4,  24 => 3,  21 => 2,  19 => 1,);
     }
 }
 /* {% include '_header.twig' %}*/
@@ -113,7 +146,40 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
 /* */
 /* <section>                           */
 /*     <div class="row">*/
-/*     	<div class="container">*/
+/*     	<div id="shopping-cart-trigger">*/
+/* 			<i class="fa fa-shopping-cart" style="color: #ffffff; font-size: 35px;"></i>*/
+/* 		</div>*/
+/* 		<div class="shopping-cart">*/
+/* 			<div class="row">*/
+/* 				<div class="col-md-1" id="close-cart">*/
+/* 					<i class="fa fa-arrow-right white"></i>					*/
+/* 				</div>*/
+/* 				<div class="col-md-10 center-align">*/
+/* 					<h3 class="lato-font white">Welcome To Your Shopping Cart</h3>*/
+/* 					<h4 class="lato-font white">Here is your order</h4>*/
+/* */
+/* 					<div class="col-md-12">*/
+/* 						*/
+/* 					</div>*/
+/* */
+/* 					<div class="col-md-12 order">*/
+/* 						<form class="order-form" action="#" method="POST" role="form">*/
+/* 							<div class="col-sm-12 form-input-group">*/
+/* 		                       	<input type="text" class="" placeholder="Enter your name" required>*/
+/* 		                    </div>*/
+/* 		                    <div class="col-sm-12 form-input-group">*/
+/* 		                        <input type="text" class="" placeholder="Enter your email" required>*/
+/* 		                    </div>*/
+/* 		                    <div class=" col-sm-12 form-input-group">*/
+/* 		                        <input type="text" class="" placeholder="Enter your phone number (optional)" required>*/
+/* 		                    </div>		                    */
+/* 		                    <button type="submit" class="btn-fill order-btn">Send Message</button>                    */
+/* 		                </form> */
+/* 					</div>*/
+/* 				</div>*/
+/* 			</div>*/
+/* 		</div>*/
+/*     	<div class="container">    		*/
 /*     		<div class="row">*/
 /*     			<h2 class="center-align" style="padding-top: 120px;">{{page.title}}</h2> */
 /* 	    		<div class="col-sm-8 col-sm-offset-2">*/
