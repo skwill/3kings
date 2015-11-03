@@ -8,6 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 
 	for ($i=0; $i < count($phones) ; $i++) { 
 		echo $phones[$i]."\r\n";
+
+		//echo chop($phones[$i]."\r\n","X Remove")
 		//$got[$i] = $phones[$i];
 	}
 

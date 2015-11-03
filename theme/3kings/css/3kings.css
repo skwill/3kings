@@ -139,6 +139,12 @@
 	color: #ffffff;
 }
 
+.remove{
+	color: red; 
+	cursor: pointer;
+	font-size: 12px;
+}
+
 @media (max-width: 499px) {
   #sliders-container{
     /*display: none;*/
