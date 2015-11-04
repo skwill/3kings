@@ -39,7 +39,7 @@ $('#orders-form').submit(function(e){
 
 	$.ajax({
         type: 'POST',
-        url: "http://localhost/3k/response.php",
+        url: "http://localhost/3k/submit.php",
         data: {activitiesArray : pass_order}, 
         dataType: 'json'
     }).done(function(response) {
