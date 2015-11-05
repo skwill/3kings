@@ -60,10 +60,11 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
+\t\t<div class=\"col-md-12 center-align\" id=\"response-message\"><h2></h2></div>
     \t<div class=\"container\">    \t\t
     \t\t<div class=\"row\">
     \t\t\t<h2 class=\"center-align\" style=\"padding-top: 120px;\">";
-        // line 42
+        // line 43
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "title", array()), "html", null, true);
         echo "</h2> 
 \t    \t\t<div class=\"col-sm-8 col-sm-offset-2\">
@@ -72,33 +73,33 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
     \t\t</div>   \t\t
     \t\t<div class=\"row\">
     \t\t\t";
-        // line 48
-        $context["number"] = 1;
         // line 49
+        $context["number"] = 1;
+        // line 50
         echo "    \t\t\t";
         $context['_parent'] = $context;
         $context['_seq'] = twig_ensure_traversable($this->env->getExtension('Bolt')->order((isset($context["phones"]) ? $context["phones"] : null), "-id"));
         foreach ($context['_seq'] as $context["_key"] => $context["phone"]) {
-            // line 50
+            // line 51
             echo "    \t\t\t
     \t\t\t<div class=\"col-sm-3 center-align phone\">
     \t\t\t\t<div class=\"col-sm-12 product-name\">    \t\t\t\t\t
     \t\t\t\t\t<h5 class=\"center-align lato-font\"><strong>";
-            // line 53
+            // line 54
             echo twig_escape_filter($this->env, $this->getAttribute($context["phone"], "title", array()), "html", null, true);
             echo "</strong></h5>
     \t\t\t\t\t<hr class=\"line\" />
     \t\t\t\t</div>
     \t\t\t\t<img src=\"";
-            // line 56
+            // line 57
             echo twig_escape_filter($this->env, $this->env->getExtension('Bolt')->image($this->getAttribute($context["phone"], "main_image", array())), "html", null, true);
             echo "\" class=\"img-responsive img-rounded\">
     \t\t\t\t<div class=\"col-sm-12 product-name\"><h5 class=\"center-align lato-font\">\$";
-            // line 57
+            // line 58
             echo twig_escape_filter($this->env, $this->getAttribute($context["phone"], "price", array()), "html", null, true);
             echo "</h5></div>
     \t\t\t\t<div class=\"col-sm-12\"><button class=\"btn-small2 btn-fill add-btn\" id=\"add-btn-";
-            // line 58
+            // line 59
             echo twig_escape_filter($this->env, (isset($context["number"]) ? $context["number"] : null), "html", null, true);
             echo "\" data-name=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($context["phone"], "title", array()), "html", null, true);
@@ -107,15 +108,15 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
             echo "\">Add To Cart</button></div>
     \t\t\t</div>
     \t\t\t";
-            // line 60
-            $context["number"] = ((isset($context["number"]) ? $context["number"] : null) + 1);
             // line 61
+            $context["number"] = ((isset($context["number"]) ? $context["number"] : null) + 1);
+            // line 62
             echo "    \t\t\t";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['phone'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 62
+        // line 63
         echo "    \t\t</div>
     \t</div>
         
@@ -123,21 +124,21 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
         <!-- <div class=\"col-lg-6 padded minus-bottom wow bounceInLeft \" style=\"\">
             <h3 class=\"lato-font center-align highlight\">Who are we?</h3>
             ";
-        // line 68
+        // line 69
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["page"]) ? $context["page"] : null), "body", array()), "html", null, true);
         echo "           
         </div>
         <div class=\"col-lg-6 company-intro-block padded wow bounceInRight\">
             <img src=\"";
-        // line 71
+        // line 72
         echo twig_escape_filter($this->env, $this->env->getExtension('Bolt')->image($this->getAttribute((isset($context["page"]) ? $context["page"] : null), "image1", array())), "html", null, true);
         echo "\" class=\"img-responsive img-rounded\">
         </div> -->
     </div>    
 </section>
 ";
-        // line 75
-        $this->loadTemplate("_footer.twig", "store.twig", 75)->display($context);
+        // line 76
+        $this->loadTemplate("_footer.twig", "store.twig", 76)->display($context);
     }
 
     public function getTemplateName()
@@ -152,7 +153,7 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
 
     public function getDebugInfo()
     {
-        return array (  140 => 75,  133 => 71,  127 => 68,  119 => 62,  113 => 61,  111 => 60,  102 => 58,  98 => 57,  94 => 56,  88 => 53,  83 => 50,  78 => 49,  76 => 48,  67 => 42,  27 => 4,  24 => 3,  21 => 2,  19 => 1,);
+        return array (  141 => 76,  134 => 72,  128 => 69,  120 => 63,  114 => 62,  112 => 61,  103 => 59,  99 => 58,  95 => 57,  89 => 54,  84 => 51,  79 => 50,  77 => 49,  68 => 43,  27 => 4,  24 => 3,  21 => 2,  19 => 1,);
     }
 }
 /* {% include '_header.twig' %}*/
@@ -194,6 +195,7 @@ class __TwigTemplate_7f4dfc3e323558742b1fe5d26e7caf5027a466b012a860be6fc6af54388
 /* 				</div>*/
 /* 			</div>*/
 /* 		</div>*/
+/* 		<div class="col-md-12 center-align" id="response-message"><h2></h2></div>*/
 /*     	<div class="container">    		*/
 /*     		<div class="row">*/
 /*     			<h2 class="center-align" style="padding-top: 120px;">{{page.title}}</h2> */

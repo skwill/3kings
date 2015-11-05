@@ -131,11 +131,12 @@
 }
 
 .holder{
-	height: 22px;
-	margin-bottom: 5px;
+	height: 48px !important;
+	/*margin-bottom: 5px;*/
 }
 
 .holder p{
+	line-height: 20px;
 	color: #ffffff;
 }
 
@@ -145,6 +146,23 @@
 	font-size: 12px;
 }
 
+#response-message{
+	display: none;
+	position: fixed;
+	z-index: 1000;
+	top: 40%;
+	background-color: rgba(255,255,255,0.7);	
+}
+
+
+#response-message p{
+	color: #000;
+}
+
+footer img{
+	margin-right: auto;
+	margin-left: auto;
+}
 @media (max-width: 499px) {
   #sliders-container{
     /*display: none;*/

@@ -11,13 +11,13 @@ $(".add-btn").click(function () {
 	var price = $(this).attr('data-price');
 
 	console.log(name+" $"+price);
-  	$("#orders").append('<div class="holder"><p><a class="remove">X Remove </a>  '+name+': $'+price+'</p></div>');
+  	$("#orders").append('<div class="holder col-sm-12"><p><a class="remove">X</a>  '+name+': $'+price+'</p></div>');
 });
 
 $('#orders-form').submit(function(e){
 	e.preventDefault();
 	
-	$('.remove').css('display', 'none');
+	//$('.remove').css('display', 'none');
 
 	var order = [];
 	var name = $("#form-name").val();
@@ -30,7 +30,7 @@ $('#orders-form').submit(function(e){
 	order[2] = phone;
 
 	$('#orders div').each(function() {
-		order[i] = $(this).text().replace('X Remove','');
+		order[i] = $(this).text().replace('X ','');
 		i++;
 	  //console.log($(this).text() );
 	});
@@ -43,7 +43,22 @@ $('#orders-form').submit(function(e){
         data: {activitiesArray : pass_order}, 
         dataType: 'json'
     }).done(function(response) {
-    	console.log('successfull'); 
+
+    	$('#orders div').remove();
+    	$("#form-name").val('');
+    	$("#form-email").val('');
+    	$("#form-phone").val('');
+
+    	console.log(response); 
+    	var message = $('#response-message h2');
+    	if (response == "success"){    		
+    		message.text('Your transaction was successful!');
+    		$('#response-message').fadeIn().delay(4000).fadeOut('slow');//.css('display', 'block');
+    	};
+    	if (response == "fail"){
+    		message.text('There was an error with your transaction. Please try again or contact us at');
+    		$('#response-message').fadeIn().delay(4000).fadeOut('slow');//.css('display', 'block');
+    	};
     });	
 });
 
@@ -52,34 +67,4 @@ $(function(){
 	$('#orders').on("click", ".remove", function(){
 		$(this).closest('div').remove();
 	});
-});	
-/*$('.remove').click(function(){
-	//.parent('div').remove();
-	$(this).closest('div').remove();
-})
-*/
-/*$('.order-btn').click(function(){
-	var phones = [];	
-	var i = 0;
-
-	$('#orders div').each(function() {
-		phones[i] = $(this).text();
-		i++;
-	  //console.log($(this).text() );
-	});
-	
-	for (var i = 0; i < phones.length; i ++) {
-		console.log(phones[i]);
-	};
-
-	var pass_phone = JSON.stringify(phones);
-
-	$.ajax({
-        type: 'POST',
-        url: "http://localhost/3k/response.php",
-        data: {activitiesArray : pass_phone}, 
-        dataType: 'json'
-    }).done(function(response) {
-    	console.log('successfull'); 
-    })	
-});*/
+});
