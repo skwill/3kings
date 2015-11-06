@@ -29,8 +29,35 @@ class data_model extends MY_Model {
 		return $query->result();
 	}
 
-	public function getOrders($table){
-		$query = $this->db->get($table);
+	public function getNewOrders($table){
+		$query = $this->db->get_where($table, array('status'=>"new"));
 		return $query->result();
+	}
+
+	public function getOldOrders($table){
+		$query = $this->db->get_where($table, array('status'=>"old"));
+		return $query->result();
+	}
+
+	public function updateOld($id){
+		$data = array(
+               'status' => 'Old'
+            );
+
+		$this->db->where('id', $id);
+		$result = $this->db->update('orders', $data);
+
+		return $result;
+	}
+
+	public function undo($id){
+		$data = array(
+               'status' => 'New'
+            );
+
+		$this->db->where('id', $id);
+		$result = $this->db->update('orders', $data);
+
+		return $result;
 	}
 }

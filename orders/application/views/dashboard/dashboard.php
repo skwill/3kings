@@ -1,10 +1,10 @@
 <header id="top" class="header">
         <div class="text-vertical-center">
-            <h1>iSpent</h1>
-            <h3>Keep track of your monthly budgets</h3>
+            <h1>3Kings Enterprises</h1>
+            <h3>Product Orders Management System</h3>
             <div class="form">      
       <ul class="tab-group">        
-        <li class="tab active"><a href="#login">Log In</a></li>
+        <li class="tab active"><a>Enter The System</a></li>
         <!-- <li class="tab "><a href="#signup">Register</a></li> -->
       </ul>
       
@@ -21,9 +21,9 @@
           <div class="field-wrap">
             
             <input id="login-password" name="password" type="password"required autocomplete="off" placeholder="Password"/>
-          </div>
+          </div><!-- 
           
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
+          <p class="forgot"><a href="#">Forgot Password?</a></p> -->
           
           <button class="button button-block"/>Log In</button>
           

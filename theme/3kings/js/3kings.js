@@ -11,7 +11,7 @@ $(".add-btn").click(function () {
 	var price = $(this).attr('data-price');
 
 	console.log(name+" $"+price);
-  	$("#orders").append('<div class="holder col-sm-12"><p><a class="remove">X</a>  '+name+': $'+price+'</p></div>');
+  	$("#orders").append('<div class="holder col-sm-12"><p><a class="remove">X</a>  '+name+': $'+price+'.</p></div>');
 });
 
 $('#orders-form').submit(function(e){

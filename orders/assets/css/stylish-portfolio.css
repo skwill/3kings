@@ -275,9 +275,9 @@ a:hover {
   color: #a0b3b0;
   font-size: 20px;
   float: left;
-  width: 50%;
+  width: 100%;
   text-align: center;
-  cursor: pointer;
+  /*cursor: pointer;*/
   -webkit-transition: .5s ease;
           transition: .5s ease;
 }
@@ -407,3 +407,7 @@ input.no-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0 500px #293742 inset; 
   box-shadow: 0 0 0 500px #293742 inset; 
 } 
+
+.center-align{
+  text-align: center;
+}

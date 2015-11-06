@@ -3,6 +3,8 @@ include('connect.php');
 
 if ($_SERVER["REQUEST_METHOD"] == "POST"){
 	//$response = "Hello";
+	date_default_timezone_set('Etc/GMT+4');
+    $datecreated = date( "Y-m-d");
 
 	$phones = json_decode($_POST["activitiesArray"]);
 
@@ -28,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			$id = $key['id'];
 		}
 		$sql1 = "UPDATE customers SET phone = '$phones[2]' WHERE id = '$id'";
-		$sql2 = "INSERT INTO orders(customer_order, customer_id) VALUES ('$placed_order.\r\n', '$id')";
+		$sql2 = "INSERT INTO orders(customer_order, customer_id, datecreated) VALUES ('$placed_order.\r\n', '$id', '$datecreated')";
 
 		/*$conn->query($sql1);
 		$conn->query($sql2);*/
